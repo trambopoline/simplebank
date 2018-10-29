@@ -1,0 +1,22 @@
+{
+  "name": "@tramampoline/simple-bank-ledger_core",
+  "version": "1.0.0",
+  "description": "A simple bank ledger. Make deposits and withdrawals, and check the balance of your imaginary account.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npm explore simple-bank-ledger_cli -- npm install -g",
+    "start": "npm explore simple-bank-ledger_back -- npm start"
+  },
+  "keywords": [
+    "simple",
+    "bank",
+    "cli",
+    "api"
+  ],
+  "author": "Devin Dodson",
+  "license": "MIT",
+  "dependencies": {
+    "simple-bank-ledger_back": "github:trambopoline/simple-bank-ledger_back#master",
+    "simple-bank-ledger_cli": "github:trambopoline/simple-bank-ledger_cli#master"
+  }
+}
